@@ -14,7 +14,7 @@ import javax.inject.Inject
 class NewsViewModel
 @Inject constructor(private val getArticlesUseCase: GetArticlesUseCase): ViewModel() {
 
-    private val newsLiveData: MutableTaskLiveData<List<News>> = MutableTaskLiveData()
+    val newsLiveData: MutableTaskLiveData<List<News>> = MutableTaskLiveData()
 
     fun getArticles() {
         viewModelScope.launch {
