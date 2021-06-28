@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tangoapp.R
@@ -66,7 +68,7 @@ class NewsFragment : Fragment() {
 
     private fun setupAdapter() {
         newsAdapter = NewsAdapter {
-
+            findNavController().navigate(R.id.action_newsFragment_to_detailsFragment, bundleOf("news" to it))
         }
 
         with(binding.newsRecycler) {

@@ -6,9 +6,7 @@ import android.view.View
 import androidx.navigation.findNavController
 import com.example.tangoapp.R
 import com.example.tangoapp.common.BaseFragment
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class SplashFragment : BaseFragment() {
 
     override fun layoutId(): Int = R.layout.fragment_splash

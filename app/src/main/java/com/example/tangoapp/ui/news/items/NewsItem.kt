@@ -15,6 +15,9 @@ class NewsItem(private val news: News, private val clickAction: (News) -> Unit):
             Picasso.get().load(news.imageUrl).fit().centerCrop().into(newsItemImage)
             newsItemTitleText.text = news.title
             newsItemSubtitleText.text = news.summary
+            root.setOnClickListener {
+                clickAction.invoke(news)
+            }
         }
     }
 

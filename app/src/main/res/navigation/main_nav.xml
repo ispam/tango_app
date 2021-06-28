@@ -20,5 +20,18 @@
         android:id="@+id/newsFragment"
         android:name="com.example.tangoapp.ui.news.NewsFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_news" />
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment">
+            <argument
+                android:name="news"
+                app:argType="com.example.tangoapp.data.entities.News" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.tangoapp.ui.details.DetailsFragment"
+        android:label="DetailsFragment" >
+    </fragment>
 </navigation>

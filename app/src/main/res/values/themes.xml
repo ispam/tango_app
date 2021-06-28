@@ -18,4 +18,9 @@
         <item name="android:windowMinWidthMajor">150dp</item>
         <item name="android:windowMinWidthMinor">150dp</item>
     </style>
+
+    <style name="Details_Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
 </resources>

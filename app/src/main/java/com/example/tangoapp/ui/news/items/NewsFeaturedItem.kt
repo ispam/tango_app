@@ -15,6 +15,9 @@ class NewsFeaturedItem(private val news: News, private val clickAction: (News) -
             Picasso.get().load(news.imageUrl).fit().centerCrop().into(featuredItemImage)
             featuredTitleText.text = news.title
             featuredSubtitleText.text = news.summary
+            root.setOnClickListener {
+                clickAction.invoke(news)
+            }
         }
     }
 
