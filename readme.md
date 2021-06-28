@@ -1,6 +1,6 @@
 # Tango Test
 
-![1](https://github.com/ispam/ZemogaApp/blob/master/gif/space_news.gif)
+![1](https://github.com/ispam/tango_app/blob/master/gif/space_news.gif)
 
 **Objective:** Build a REST app to show Articles and its details
 
