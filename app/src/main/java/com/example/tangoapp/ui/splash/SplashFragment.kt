@@ -19,6 +19,5 @@ class SplashFragment : BaseFragment() {
         Handler().postDelayed({
             view.findNavController().navigate(R.id.action_splashFragment_to_newsFragment)
         }, 1750)
-
     }
 }

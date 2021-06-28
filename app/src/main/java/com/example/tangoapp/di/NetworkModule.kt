@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit
 @InstallIn(value = [SingletonComponent::class])
 object NetworkModule {
 
-    private const val BASE_URL = "https://api.spaceflightnewsapi.net/v3/"
+    private const val BASE_URL = "https://api.spaceflightnewsapi.net/"
 
     @Provides
     fun provideAPI(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
@@ -41,7 +41,7 @@ object NetworkModule {
             }
         })
 
-        interceptor.level = HttpLoggingInterceptor.Level.BASIC
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
         return interceptor
     }
 

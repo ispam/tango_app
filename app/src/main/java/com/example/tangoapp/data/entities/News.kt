@@ -11,5 +11,3 @@ data class News(
     val updatedAt: String,
     val featured: Boolean
 )
-
-//fun News.mapToPresentation() =
